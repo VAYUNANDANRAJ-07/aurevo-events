@@ -1,4 +1,5 @@
 "use client";
+
 export default function Home() {
   return (
     <main>
@@ -19,7 +20,6 @@ export default function Home() {
 
       {/* ================= HERO ================= */}
       <section id="home" className="hero">
-
         <div className="hero-content">
           <p className="hero-label">AUREVO EVENTS</p>
 
@@ -44,19 +44,16 @@ export default function Home() {
             </a>
           </div>
         </div>
-
       </section>
 
 
       {/* ================= ABOUT ================= */}
       <section id="about" className="section about-section">
-
         <p className="section-label">
           01 — ABOUT US
         </p>
 
         <div className="about-layout">
-
           <div className="about-heading">
             <h2>
               We don't just
@@ -68,7 +65,6 @@ export default function Home() {
           </div>
 
           <div className="about-text">
-
             <p>
               AUREVO EVENTS is an event experience company focused on
               creating elegant, memorable and unforgettable celebrations.
@@ -78,19 +74,14 @@ export default function Home() {
               From the first idea to the final moment, we take care of
               every detail to create experiences that people remember.
             </p>
-
           </div>
-
         </div>
-
       </section>
 
 
       {/* ================= WHY AUREVO ================= */}
       <section className="section why-aurevo">
-
         <div className="why-heading">
-
           <p className="section-label">
             02 — WHY AUREVO
           </p>
@@ -100,53 +91,40 @@ export default function Home() {
             <br />
             <span>Our obsession.</span>
           </h2>
-
         </div>
-
 
         <div className="why-grid">
 
           <div className="why-card">
             <span>01</span>
-
             <h3>CREATIVE</h3>
-
             <p>
               Fresh concepts and creative ideas designed around
               your event and your audience.
             </p>
           </div>
 
-
           <div className="why-card">
             <span>02</span>
-
             <h3>PERSONAL</h3>
-
             <p>
               Every event is different. We build experiences that
               reflect your vision and personality.
             </p>
           </div>
 
-
           <div className="why-card">
             <span>03</span>
-
             <h3>PRECISE</h3>
-
             <p>
               From planning to execution, every detail is handled
               with care and precision.
             </p>
           </div>
 
-
           <div className="why-card">
             <span>04</span>
-
             <h3>UNFORGETTABLE</h3>
-
             <p>
               We don't just manage events. We create moments people
               remember long after the event ends.
@@ -154,13 +132,11 @@ export default function Home() {
           </div>
 
         </div>
-
       </section>
 
 
       {/* ================= SERVICES ================= */}
       <section id="services" className="section services-section">
-
         <p className="section-label">
           03 — WHAT WE DO
         </p>
@@ -194,24 +170,20 @@ export default function Home() {
           </div>
 
         </div>
-
       </section>
 
 
       {/* ================= PROCESS ================= */}
       <section className="section process-section">
-
         <p className="section-label">
           04 — OUR PROCESS
         </p>
 
         <h2>From Vision to Reality.</h2>
 
-
         <div className="process-grid">
 
           <div className="process-card">
-
             <div className="process-number">
               01
             </div>
@@ -222,12 +194,9 @@ export default function Home() {
               We understand your vision, requirements,
               audience and expectations.
             </p>
-
           </div>
 
-
           <div className="process-card">
-
             <div className="process-number">
               02
             </div>
@@ -238,12 +207,9 @@ export default function Home() {
               We develop creative concepts and plan every
               element of your event.
             </p>
-
           </div>
 
-
           <div className="process-card">
-
             <div className="process-number">
               03
             </div>
@@ -254,12 +220,9 @@ export default function Home() {
               We bring the plan to life with precise
               coordination and attention to detail.
             </p>
-
           </div>
 
-
           <div className="process-card">
-
             <div className="process-number">
               04
             </div>
@@ -270,23 +233,19 @@ export default function Home() {
               We make sure every moment is seamless,
               memorable and unforgettable.
             </p>
-
           </div>
 
         </div>
-
       </section>
 
 
       {/* ================= GALLERY ================= */}
       <section className="section gallery-section">
-
         <p className="section-label">
           05 — EXPERIENCES
         </p>
 
         <h2>Moments We Create.</h2>
-
 
         <div className="gallery">
 
@@ -301,7 +260,6 @@ export default function Home() {
             </div>
           </div>
 
-
           <div className="gallery-item">
             <img
               src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1200&q=80"
@@ -313,7 +271,6 @@ export default function Home() {
             </div>
           </div>
 
-
           <div className="gallery-item">
             <img
               src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80"
@@ -324,7 +281,6 @@ export default function Home() {
               <span>ENTERTAINMENT</span>
             </div>
           </div>
-
 
           <div className="gallery-item">
             <img
@@ -338,7 +294,6 @@ export default function Home() {
           </div>
 
         </div>
-
       </section>
 
 
@@ -358,47 +313,112 @@ export default function Home() {
 
         <div className="contact-layout">
 
-          {/* FORM */}
+          {/* ================= WEB3FORMS ================= */}
           <form
             className="contact-form"
-            onSubmit={(e) => e.preventDefault()}
+            action="https://api.web3forms.com/submit"
+            method="POST"
           >
 
-            <label>YOUR NAME</label>
+            {/* YOUR WEB3FORMS ACCESS KEY */}
             <input
+              type="hidden"
+              name="access_key"
+              value="PASTE_YOUR_WEB3FORMS_ACCESS_KEY_HERE"
+            />
+
+            {/* EMAIL SUBJECT */}
+            <input
+              type="hidden"
+              name="subject"
+              value="New AUREVO Events Enquiry"
+            />
+
+            {/* FROM NAME */}
+            <input
+              type="hidden"
+              name="from_name"
+              value="AUREVO Events Website"
+            />
+
+            {/* REDIRECT AFTER SUBMISSION */}
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://aurevo-events.vercel.app/"
+            />
+
+            {/* ================= NAME ================= */}
+            <label htmlFor="name">
+              YOUR NAME
+            </label>
+
+            <input
+              id="name"
               type="text"
+              name="name"
               placeholder="Your name"
+              required
             />
 
 
-            <label>YOUR EMAIL</label>
+            {/* ================= EMAIL ================= */}
+            <label htmlFor="email">
+              YOUR EMAIL
+            </label>
+
             <input
+              id="email"
               type="email"
+              name="email"
               placeholder="your@email.com"
+              required
             />
 
 
-            <label>PHONE NUMBER</label>
+            {/* ================= PHONE ================= */}
+            <label htmlFor="phone">
+              PHONE NUMBER
+            </label>
+
             <input
+              id="phone"
               type="tel"
+              name="phone"
               placeholder="+91 XXXXX XXXXX"
+              required
             />
 
 
-            <label>YOUR EVENT</label>
+            {/* ================= EVENT ================= */}
+            <label htmlFor="event">
+              YOUR EVENT
+            </label>
+
             <input
+              id="event"
               type="text"
-              placeholder="College / Corporate / Private / Other"
+              name="event"
+              placeholder="College / Corporate / Private"
+              required
             />
 
 
-            <label>YOUR REQUIREMENTS</label>
+            {/* ================= REQUIREMENTS ================= */}
+            <label htmlFor="requirements">
+              YOUR REQUIREMENTS
+            </label>
+
             <textarea
+              id="requirements"
+              name="requirements"
               placeholder="Tell us about your event..."
               rows={6}
+              required
             />
 
 
+            {/* ================= SUBMIT ================= */}
             <button
               type="submit"
               className="gold-button submit-button"
@@ -409,7 +429,7 @@ export default function Home() {
           </form>
 
 
-          {/* CONTACT INFORMATION */}
+          {/* ================= CONTACT INFORMATION ================= */}
           <div className="contact-info">
 
             <div className="contact-detail">
@@ -430,6 +450,7 @@ export default function Home() {
 
             <div className="contact-detail">
               <span>INSTAGRAM</span>
+
               <a
                 href="https://www.instagram.com/_aurevoevents/"
                 target="_blank"
@@ -450,7 +471,7 @@ export default function Home() {
         </div>
 
 
-        {/* CONTACT BUTTONS */}
+        {/* ================= CONTACT BUTTONS ================= */}
         <div className="contact-buttons">
 
           <a
