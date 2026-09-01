@@ -324,7 +324,7 @@ export default function Home() {
             <input
               type="hidden"
               name="access_key"
-              value="PASTE_YOUR_WEB3FORMS_ACCESS_KEY_HERE"
+              value="cdd7ded6-0275-4dab-a55b-6ec311fa24fb"
             />
 
             {/* EMAIL SUBJECT */}
