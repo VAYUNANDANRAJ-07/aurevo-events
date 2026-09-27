@@ -395,7 +395,7 @@ export default function Home() {
           <input
             type="hidden"
             name="access_key"
-            value="YOUR_WEB3FORMS_ACCESS_KEY"
+            value="cdd7ded6-0275-4dab-a55b-6ec311fa24fb"
           />
 
           <input
